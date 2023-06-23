@@ -1,3 +1,7 @@
-import { createReducer } from '@reduxjs/toolkit';
+import { contactsReducer } from './contactsSlice';
+import { filterReducer } from './filterSlice';
 
-export const reducer = createReducer()
+export const rootReducer = {
+  contacts: contactsReducer,
+  filter: filterReducer,
+};
