@@ -3,12 +3,13 @@ import { addContact } from '../../redux/contactsSlice';
 import { nanoid } from 'nanoid';
 import css from './ContactForm.module.css';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import { getContactsItems } from 'redux/contactsSlice';
 
 const nameId = nanoid();
 const numberId = nanoid();
 
 export const ContactForm = () => {
-  const contacts = useSelector(state => state.contacts.array);
+  const contacts = useSelector(getContactsItems);
 
   const dispatch = useDispatch();
 

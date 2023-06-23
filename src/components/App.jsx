@@ -5,18 +5,7 @@ import { Filter } from './Filter/Filter';
 import css from './App.module.css';
 
 export const App = () => {
-  // const contacts = useSelector(state => state.contacts.array);
-  // const filter = useSelector(state => state.filter);
-
  
-  // const getVisibleContacts = () => {
-  //   const normalizedFilter = filter.toLowerCase().trim();
-
-  //   return contacts.filter(contact =>
-  //     contact.name.toLowerCase().includes(normalizedFilter)
-  //   );
-  // };
-  // const visibleContacts = getVisibleContacts();
   
   return (
     <div>
@@ -24,9 +13,7 @@ export const App = () => {
       <ContactForm />
       <h2 className={css.text}>Contacts</h2>
       <Filter />
-      <ContactsList
-        // contacts={visibleContacts}
-      />
+      <ContactsList/>
     </div>
   );
 };
