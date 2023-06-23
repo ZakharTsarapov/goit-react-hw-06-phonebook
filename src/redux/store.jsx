@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { rootReducer } from "./reducer";
+import { reducer } from "./reducer";
 import {
   persistStore,
   FLUSH,
@@ -11,7 +11,7 @@ import {
 } from 'redux-persist'; 
 
 export const store = configureStore({
-  rootReducer,
+  reducer,
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
       serializableCheck: {

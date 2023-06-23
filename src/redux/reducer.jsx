@@ -1,7 +1,7 @@
 import { contactsReducer } from './contactsSlice';
 import { filterReducer } from './filterSlice';
 
-export const rootReducer = {
+export const reducer = {
   contacts: contactsReducer,
   filter: filterReducer,
 };
